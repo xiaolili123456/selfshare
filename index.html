@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="site" content="http://www.htyfw.com.cn/article/861.html?id=551&article_id=861&type=news"/>
+    <!-- <meta name="description" content="你好" /> -->
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/css/share.min.css">
+    <style>
+        ul {
+            width: 200px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="row">
+            <div id="qq" class="social-share" data-sites="qq" data-title="标题" data-url="http://www.htyfw.com.cn/article/861.html?id=551&article_id=861&type=news"></div>
+        </li>
+        <li class="row">
+            <div id="qzone" class="social-share" data-sites="qzone"></div>
+        </li>
+        <li class="row">
+            <div id="wechat" class="social-share" data-sites="wechat"></div>
+        </li>
+        <li class="row">
+            <div id="weibo" class="social-share" data-sites="weibo"></div>
+        </li>
+    </ul>
+<script src="http://apps.bdimg.com/libs/jquery/1.8.2/jquery.js"></script>
+<script src="./dist/js/jquery.share.min.js"></script>
+<script>
+    var $config = {
+        // url: 'http://www.htyfw.com.cn/article/861.html?id=551&article_id=861&type=news',
+        // sorece: 'http://www.htyfw.com.cn/article/861.html?id=551&article_id=861&type=news',
+        // title: '标题',
+        // description: '描述',
+        wechatQrcodeTitle: "微信扫一扫：分享11", // 微信二维码提示文字
+        wechatQrcodeHelper: '<p>微信里点“发现”，扫一下1</p><p>二维码便可将本文分享至朋友圈1。</p>',
+    };
+    $('#qq').share();
+    // $('#qq').share($config);
+    $('#qzone').share($config);
+    $('#wechat').share($config);
+    $('#weibo').share($config);
+    // socialShare('.social-share-cs', $config);
+</script>
+</body>
+</html>
